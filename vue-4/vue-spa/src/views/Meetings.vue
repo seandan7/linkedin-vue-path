@@ -61,7 +61,7 @@
                 <router-link
                   class="btn btn-sm btn-outline-secondary"
                   title="Check In"
-                  :to="'/checkin' + user.uid + '/' + item.id"
+                  :to="'/checkin/' + user.uid + '/' + item.id"
                 >
                   link
                 </router-link>
@@ -69,7 +69,7 @@
                 <router-link
                   class="btn btn-sm btn-outline-secondary"
                   title="Attendees"
-                  to="/"
+                  :to="'/attendees/' + user.uid + '/' + item.id"
                 >
                   list-ul
                 </router-link>

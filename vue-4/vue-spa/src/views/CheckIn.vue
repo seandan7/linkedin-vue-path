@@ -7,7 +7,7 @@
             <div class="card-body">
               <h3 class="font-weight-light mb-3">Check in</h3>
               <section class="form-group">
-                <div class="col-12 alert alert-danger px-3">
+                <div v-if="error" class="col-12 alert alert-danger px-3">
                   error
                 </div>
                 <label class="form-control-label sr-only" for="displayName"
@@ -52,6 +52,7 @@ export default {
       email: "'",
     };
   },
+  props: ["error"],
   methods: {
     handleCheckIn: function() {
       this.$emit("checkIn", {

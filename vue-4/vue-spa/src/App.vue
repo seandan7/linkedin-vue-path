@@ -9,6 +9,7 @@
       class="container"
       :user="user"
       :meetings="meetings"
+      :error="error"
     />
   </div>
 </template>
@@ -26,6 +27,7 @@ export default {
     return {
       user: null,
       meetings: [],
+      error: null,
     };
   },
   methods: {
