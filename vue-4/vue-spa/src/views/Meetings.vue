@@ -87,7 +87,7 @@
 </template>
 <script>
 export default {
-  name: " meetings",
+  name: "meetings",
   data: function() {
     return {
       meetingName: "",
