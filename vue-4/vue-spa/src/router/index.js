@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Meetings from "../views/Meetings.vue";
 import Register from "../views/Register.vue";
-
+import CheckIn from "../views/CheckIn";
 Vue.use(VueRouter);
 
 const routes = [
@@ -31,6 +31,11 @@ const routes = [
   {
     path: "*",
     redirect: "/",
+  },
+  {
+    path: "/checkin/:userId/:meetingId",
+    name: "CheckIn",
+    component: CheckIn,
   },
 ];
 
