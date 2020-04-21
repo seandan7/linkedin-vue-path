@@ -90,7 +90,7 @@ export default {
   name: "meetings",
   data: function() {
     return {
-      meetingName: "",
+      meetingName: null,
     };
   },
   methods: {
